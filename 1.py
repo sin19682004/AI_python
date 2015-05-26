@@ -1,2 +1,13 @@
-a=[2,4]
-print a
+
+import imp
+
+foo = imp.load_source('A', 'B/a.py')
+#foo.A()
+
+
+a=foo.A()
+a.P(6)
+
+
+
+
